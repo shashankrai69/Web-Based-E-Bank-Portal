@@ -1,0 +1,20 @@
+# Angular
+**/node_modules/
+**/dist/
+**/.angular/
+*.log
+
+# Spring Boot
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db

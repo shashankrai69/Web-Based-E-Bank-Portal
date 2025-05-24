@@ -1,0 +1,46 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text-center">Send Money</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="senderId">Sender Account ID</label>
+        <input
+          type="number"
+          id="senderId"
+          class="form-control"
+          [(ngModel)]="senderId"
+          name="senderId"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="receiverId">Receiver Account ID</label>
+        <input
+          type="number"
+          id="receiverId"
+          class="form-control"
+          [(ngModel)]="receiverId"
+          name="receiverId"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input
+          type="number"
+          id="amount"
+          class="form-control"
+          [(ngModel)]="amount"
+          name="amount"
+          required
+        />
+      </div>
+  
+      <br />
+      <button type="submit" class="btn btn-success btn-block">Submit</button>
+      <p class="text-center mt-3">{{ message }}</p>
+    </form>
+  </div>
+  

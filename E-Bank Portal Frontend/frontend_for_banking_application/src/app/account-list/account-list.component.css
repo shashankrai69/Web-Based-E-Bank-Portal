@@ -1,0 +1,118 @@
+.account-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.account-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.account-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.account-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.account-id {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+}
+
+.account-balance {
+  font-size: 20px;
+  color: #4caf50;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.1s ease;
+  color: white;
+  min-width: 100px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.deposit {
+  background-color: #2e7d32;
+}
+
+.deposit:hover {
+  background-color: #1b5e20;
+}
+
+.withdraw {
+  background-color: #0288d1;
+}
+
+.withdraw:hover {
+  background-color: #01579b;
+}
+
+.send {
+  background-color: #512da8;
+}
+
+.send:hover {
+  background-color: #311b92;
+}
+
+.delete {
+  background-color: #c62828;
+}
+
+.delete:hover {
+  background-color: #8e0000;
+}
+
+
+.badge {
+  display: inline-block;
+  background-color: #e0f7e9;
+  color: #2e7d32;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 50px;
+  margin-left: 10px;
+  vertical-align: middle;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
